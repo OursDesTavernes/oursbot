@@ -7,7 +7,8 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!soif') {
-    	message.reply('tiens, voici une bonne bière! :beer:');
+        message.channel.send('tiens, voici une bonne bière! :beer:')
+    	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
 
 
