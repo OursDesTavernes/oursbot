@@ -12,7 +12,7 @@ client.on('message', message => {
   	}
 
    else if (message.content === '!café') {
-        message.channel.send('tiens, voici une bon café! :coffee:')
+        message.channel.send('tiens, voici un bon café! :coffee:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
 });     
