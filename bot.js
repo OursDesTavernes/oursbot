@@ -9,7 +9,7 @@ client.on('ready', () => {
     if (message.content === '!soif') {
     	message.reply('tiens, voici une bonne bière! :beer:');
   	}*/
-client.on('message', function (channelID, message) => {
+client.on('message', message => {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `!`
     if (message.substring(0, 1) == '!') {
@@ -19,14 +19,13 @@ client.on('message', function (channelID, message) => {
         switch(cmd) {
             // !ping
             case 'ping':
-                client.sendMessage({
-                    to: channelID,
-                    message: 'Pong!'
+                message.reply('tiens, voici une bonne bière! :beer:')
                 });
             break;
             // Just add any case commands if you want to..
          }
      }
+
 
 });     
 // THIS  MUST  BE  THIS  WAY
