@@ -15,10 +15,6 @@ client.on('message', message => {
         message.channel.send('tiens, voici un bon café! :coffee:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
-    else if (message.content === '!afk') {
-        message.channel.send(':EggplantHand_Animated:')
-    	//message.reply('tiens, voici une bonne bière! :beer:');
-  	}
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
