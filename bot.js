@@ -10,8 +10,8 @@ client.on('message', message => {
         message.channel.send('tiens, voici une bonne bière! :beer:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
- client.on('message', message => {
-    if (message.content === '!café') {
+
+   else if (message.content === '!café') {
         message.channel.send('tiens, voici une bon café! :coffee:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
