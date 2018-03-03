@@ -15,6 +15,10 @@ client.on('message', message => {
         message.channel.send('tiens, voici un bon café! :coffee:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
+    else if (message.content === '!super soif de la mort qui tue! TAVERNIER!') {
+        message.channel.send('TIENS,VOICI UNE PUTAIN DE TONNE DE LITRES DE BIERES!!!:beers::beers::beers::beers::beers::beers:')
+    	//message.reply('tiens, voici une bonne bière! :beer:');
+  	}
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
