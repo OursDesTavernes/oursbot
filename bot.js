@@ -16,7 +16,7 @@ client.on('message', message) {
         switch(cmd) {
             // !ping
             case 'ping':
-			{message.reply('tiens, voici une bonne bière! :beer:)}
+			{message.reply('tiens, voici une bonne bière! :beer:')}
                 
                 });
             break;
