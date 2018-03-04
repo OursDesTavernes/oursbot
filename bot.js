@@ -4,7 +4,6 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-
 client.on('message', message => {
     if (message.content === '!soif') {
         message.channel.send('tiens, voici une bonne bière! :beer:')
@@ -35,7 +34,7 @@ client.on('message', message => {
         message.channel.send('enfonce toi un maïs dans le cul et va jouer dans le micro-ondes')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
-    else if (message.content === '!Talos') {
+    else if (message.content === '!talos') {
         message.channel.send('http://i.imgur.com/c0QTX24.jpg')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	} 
