@@ -16,7 +16,7 @@ client.on('message', message => {
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
     else if (message.content === '!super soif de la mort qui tue! TAVERNIER!') {
-        message.channel.send('TIENS,VOICI UNE PUTAIN DE TONNE DE LITRES DE BIERES!!!:beers::beers::beers::beers::beers::beers:')
+        message.channel.send('TIENS,VOICI UNE PUTAIN DE TONNE DE LITRES DE BIERE!!!:beers::beers::beers::beers::beers::beers:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
 });     
