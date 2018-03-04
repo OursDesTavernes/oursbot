@@ -39,7 +39,7 @@ client.on('message', message => {
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	} 
     else if (message.content === '!dwarf') {
-        message.channel.send('!play diggy hole')
+        message.channel.send('nains > elfes')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	} 
     
