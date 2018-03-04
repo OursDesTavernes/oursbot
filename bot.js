@@ -68,7 +68,7 @@ client.on('message', message => {
 		break;
 		
 		case '!chips' :
-		message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes');
+		message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes :corn:');
 		break;
 		
 		case '!talos' :
