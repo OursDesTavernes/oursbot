@@ -90,6 +90,10 @@ client.on('message', message => {
 		case '!pin-up' :
 		message.channel.send('https://image.noelshack.com/fichiers/2018/09/7/1520187043-pin-up.png');
 		break;
+			
+		case '!items uniques' :
+		message.channel.send('FAITES PAS CHIER ILS SONT SUR LA MAP!');
+		break;
 	}   
 });     
 // THIS  MUST  BE  THIS  WAY
