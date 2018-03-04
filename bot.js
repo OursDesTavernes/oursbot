@@ -20,11 +20,7 @@ client.on('message', message => {
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
     else if (message.content === '!afkafé') {
-        message.reply('est parti se faire un café')
-    	//message.reply('tiens, voici une bonne bière! :beer:');
-  	}
-    else if (message.content === '!ours') {
-        message.channel.send('C'est ours qui a la plus grosse')
+        message.reply(name,'est parti se faire un café')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
     else if (message.content === '!elfes') {
