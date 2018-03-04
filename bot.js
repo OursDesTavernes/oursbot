@@ -30,7 +30,11 @@ client.on('message', message => {
      else if (message.content === '!thé') {
         message.channel.send('ON NE SERT PAS LES NEFLES ICI!')
     	//message.reply('tiens, voici une bonne bière! :beer:');
-  	}                            
+  	}
+    else if (message.content === '!chips') {
+        message.channel.send('enfonce toi un maïs dans le cul et va jouer dans le micro-ondes')
+    	//message.reply('tiens, voici une bonne bière! :beer:');
+  	}   
     
 });     
 // THIS  MUST  BE  THIS  WAY
