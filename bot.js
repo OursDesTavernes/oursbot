@@ -20,7 +20,7 @@ client.on('message', message => {
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
     else if (message.content === '!afkafé') {
-        message.reply('est partit se faire un café')
+        message.reply('est parti se faire un café')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
 });     
