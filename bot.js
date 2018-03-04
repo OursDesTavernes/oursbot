@@ -86,6 +86,10 @@ client.on('message', message => {
 		case '!sombrage' :
 		message.channel.send('MORT AUX IMPERIAUX!');
 		break;
+			
+		case '!pin-up' :
+		message.channel.send('https://www.noelshack.com/2018-09-7-1520187043-pin-up.png');
+		break;	
 	}   
 });     
 // THIS  MUST  BE  THIS  WAY
