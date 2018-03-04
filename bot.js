@@ -27,7 +27,10 @@ client.on('message', message => {
         message.channel.send('les elfes sont une anomalie')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
-                             
+     else if (message.content === '!thé') {
+        message.channel.send('ON NE SERT PAS LES NEFLES ICI!')
+    	//message.reply('tiens, voici une bonne bière! :beer:');
+  	}                            
     
 });     
 // THIS  MUST  BE  THIS  WAY
