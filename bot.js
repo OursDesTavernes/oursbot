@@ -19,6 +19,10 @@ client.on('message', message => {
         message.channel.send('TIENS,VOICI UNE PUTAIN DE TONNE DE LITRES DE BIERE!!!:beers::beers::beers::beers::beers::beers:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
+    else if (message.content === '!afkafé') {
+        message.reply('est partit se faire un café')
+    	//message.reply('tiens, voici une bonne bière! :beer:');
+  	}
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
