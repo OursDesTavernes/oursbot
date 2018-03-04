@@ -50,8 +50,35 @@ client.on('message', message => {
 		case '!café' :
 		message.channel.send('tiens, voici un bon café! :coffee:');
 		break;
-	}
-    
+		
+		case '!super soif de la mort qui tue! TAVERNIER!' :
+		message.channel.send('TIENS,VOICI UNE PUTAIN DE TONNE DE LITRES DE BIERE!!!:beers::beers::beers::beers::beers::beers:');
+		break;
+		
+		case '!afkafé' :
+		message.channel.send(message.author.toString() + ' est parti se faire un café :coffee:');
+		break;
+		
+		case '!elfes' :
+		message.channel.send('les elfes sont une anomalie');
+		break;
+		
+		case '!thé' :
+		message.channel.send('ON NE SERT PAS LES NEFLES ICI!');
+		break;
+		
+		case '!chips' :
+		message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes');
+		break;
+		
+		case '!talos' :
+		message.channel.send('http://i.imgur.com/c0QTX24.jpg');
+		break;
+		
+		case '!dwarf' :
+		message.channel.send('nains > elfes');
+		break;
+	}   
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
