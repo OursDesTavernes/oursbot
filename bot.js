@@ -78,8 +78,13 @@ client.on('message', message => {
 		case '!dwarf' :
 		message.channel.send('nains > elfes');
 		break;
+			
 		case '!empire' :
 		message.channel.send('GLOIRE AUX SOMBRAGES!');
+		break;
+			
+		case '!sombrage' :
+		message.channel.send('MORT AUX IMPERIAUX!');
 		break;
 	}   
 });     
