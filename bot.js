@@ -20,9 +20,19 @@ client.on('message', message => {
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
     else if (message.content === '!afkafé') {
-        message.channel.send(member+'est parti se faire un café')
+        message.reply('est parti se faire un café')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
+    else if (message.content === '!ours') {
+        message.channel.send('C'est ours qui a la plus grosse')
+    	//message.reply('tiens, voici une bonne bière! :beer:');
+  	}
+    else if (message.content === '!elfes') {
+        message.channel.send('les elfes sont une anomalie')
+    	//message.reply('tiens, voici une bonne bière! :beer:');
+  	}
+                             
+    
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
