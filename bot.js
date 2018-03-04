@@ -30,7 +30,7 @@ client.on('message', message => {
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
     else if (message.content === '!chips') {
-        message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes')
+        message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes :corn:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
     else if (message.content === '!talos') {
