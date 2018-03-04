@@ -90,9 +90,6 @@ client.on('message', message => {
 		case '!pin-up' :
 		message.channel.send('https://www.noelshack.com/2018-09-7-1520187043-pin-up.png');
 		break;
-		case '!test' :
-		message.channel.send('!np');
-		break;	
 	}   
 });     
 // THIS  MUST  BE  THIS  WAY
