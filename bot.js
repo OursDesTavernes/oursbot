@@ -20,9 +20,8 @@ client.on('message', message => {
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
     else if (message.content === '!afkafé') {
-        //message.channel.send(message.author.toString() + ' est parti se faire un café :coffee:')
+        message.channel.send(message.author.toString() + ' est parti se faire un café :coffee:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
-        message.channel.send('${user} est parti se faire un café :coffee:')
   	}
     else if (message.content === '!elfes') {
         message.channel.send('les elfes sont une anomalie')
