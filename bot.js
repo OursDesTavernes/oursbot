@@ -78,6 +78,9 @@ client.on('message', message => {
 		case '!dwarf' :
 		message.channel.send('nains > elfes');
 		break;
+		case '!empire' :
+		message.channel.send('VIVE LES SOMBRAGES!');
+		break;
 	}   
 });     
 // THIS  MUST  BE  THIS  WAY
