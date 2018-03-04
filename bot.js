@@ -38,6 +38,10 @@ client.on('message', message => {
         message.channel.send('http://i.imgur.com/c0QTX24.jpg')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	} 
+    else if (message.content === '!dwarf') {
+        message.channel.send('!play diggy hole')
+    	//message.reply('tiens, voici une bonne bière! :beer:');
+  	} 
     
 });     
 // THIS  MUST  BE  THIS  WAY
