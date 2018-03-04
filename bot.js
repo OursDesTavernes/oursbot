@@ -5,12 +5,11 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 client.on('message', message => {
-    if (message.content === '!soif') {
+    /*if (message.content === '!soif') {
         message.channel.send('tiens, voici une bonne bière! :beer:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
-
-   else if (message.content === '!café') {
+    else if (message.content === '!café') {
         message.channel.send('tiens, voici un bon café! :coffee:')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
@@ -30,7 +29,7 @@ client.on('message', message => {
         message.channel.send('ON NE SERT PAS LES NEFLES ICI!')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
-   else if (message.content === '!chips') {
+    else if (message.content === '!chips') {
         message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}
@@ -41,7 +40,17 @@ client.on('message', message => {
     else if (message.content === '!dwarf') {
         message.channel.send('nains > elfes')
     	//message.reply('tiens, voici une bonne bière! :beer:');
-  	} 
+  	}*/ 
+	switch (message.content)
+	{
+		case '!soif' :
+		message.channel.send('tiens, voici une bonne bière! :beer:');
+		break;
+
+		case '!café' :
+		message.channel.send('tiens, voici un bon café! :coffee:');
+		break;
+	}
     
 });     
 // THIS  MUST  BE  THIS  WAY
