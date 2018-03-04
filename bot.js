@@ -79,7 +79,7 @@ client.on('message', message => {
 		message.channel.send('nains > elfes');
 		break;
 		case '!empire' :
-		message.channel.send('VIVE LES SOMBRAGES!');
+		message.channel.send('GLOIRE AUX SOMBRAGES!');
 		break;
 	}   
 });     
