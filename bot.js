@@ -88,7 +88,7 @@ client.on('message', message => {
 		break;
 			
 		case '!pin-up' :
-		message.channel.send('https://www.noelshack.com/2018-09-7-1520187043-pin-up.png');
+		message.channel.send('https://image.noelshack.com/fichiers/2018/09/7/1520187043-pin-up.png');
 		break;
 	}   
 });     
