@@ -8,10 +8,10 @@ client.on('message', message => {
    
 	
    client.on('guildMemberAdd', member => {
-   if (member.role == "@everyone")//if role du membre == pas de role
+   if (member.role == @everyone)//if role du membre == pas de role
    {
 		member.send('Bienvenue sur le serveur de Heavy-Craft');
-		member.addRole("b")
+		member.addRole(b)
    }
 });
 	
