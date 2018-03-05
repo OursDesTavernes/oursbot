@@ -8,7 +8,7 @@ client.on('message', message => {
    
 	
    client.on('guildMemberAdd', member => {
-   if (member.role != "Naufragé")//if role du membre == pas de role
+   if (member.role != "a")//if role du membre == pas de role
    {
 		member.send('Bienvenue sur le serveur de Heavy-Craft');
 		member.addRole("b")
