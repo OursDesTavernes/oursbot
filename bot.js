@@ -42,9 +42,9 @@ client.on('message', message => {
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}*/ 
 	
-   client.on('guildMemberAdd', member => {
+   /*client.on('guildMemberAdd', member => {
    member.send('Bienvenue sur le serveur de Heavy-Craft');
-});
+});*/
 	
 	switch (message.content)
 	{
