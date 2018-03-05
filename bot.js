@@ -5,13 +5,14 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+discord.client.setUsername('BotDesTavernes');
 
 client.on('guildMemberAdd', member => {
    //if (member.role != "a")//if role du membre == pas de role
    //{
 		member.send('Bienvenue sur le serveur de Heavy-Craft');
-		var roleN = member.guild.roles.find('name','b');
-		member.addRole(role)
+		//var roleN = member.guild.roles.find('name','b');
+		//member.addRole(role)
    //}
 });
 
