@@ -41,6 +41,11 @@ client.on('message', message => {
         message.channel.send('nains > elfes')
     	//message.reply('tiens, voici une bonne bière! :beer:');
   	}*/ 
+	
+   bot.on('guildMemberAdd', member => {
+   member.send('Bienvenue sur le serveur de Heavy-Craft');
+});
+	
 	switch (message.content)
 	{
 		case '!soif' :
