@@ -5,7 +5,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-discord.client.setUsername('BotDesTavernes')
+//discord.client.setUsername('BotDesTavernes')
 
 client.on('guildMemberAdd', member => {
    //if (member.role != "a")//if role du membre == pas de role
