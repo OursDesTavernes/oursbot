@@ -94,6 +94,10 @@ client.on('message', message => {
 		case '!items uniques' :
 		message.channel.send('FAITES PAS CHIER ILS SONT SUR LA MAP!');
 		break;
+			
+		case '!ronde' :
+		message.channel.send('Chevels est partie faire sa ronde');
+		break;
 		
 		case '!dynmap' :
 		message.channel.send('http://51.254.170.142:8130/');
