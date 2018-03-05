@@ -8,10 +8,10 @@ client.on('message', message => {
    
 	
    client.on('guildMemberAdd', member => {
-   if (member.role == @everyone)//if role du membre == pas de role
+   if (member.role != "Naufragé")//if role du membre == pas de role
    {
 		member.send('Bienvenue sur le serveur de Heavy-Craft');
-		member.addRole(b)
+		member.addRole("b")
    }
 });
 	
@@ -84,3 +84,4 @@ client.on('message', message => {
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+
