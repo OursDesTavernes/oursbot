@@ -102,6 +102,10 @@ client.on('message', message => {
 		case '!dynmap' :
 		message.channel.send('http://51.254.170.142:8130/');
 		break;
+			
+		case '!hems' :
+		message.channel.send('http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=2&thread_id=2530');
+		break;	
 	}   
 });     
 // THIS  MUST  BE  THIS  WAY
