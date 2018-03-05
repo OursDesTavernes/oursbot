@@ -7,11 +7,11 @@ client.on('ready', () => {
 
 
 client.on('guildMemberAdd', member => {
-   if (member.role != "a")//if role du membre == pas de role
-   {
+   //if (member.role != "a")//if role du membre == pas de role
+   //{
 		member.send('Bienvenue sur le serveur de Heavy-Craft');
 		member.addRole("b");
-   }
+   //}
 });
 
 client.on('message', message => {
@@ -85,4 +85,3 @@ client.on('message', message => {
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
-
