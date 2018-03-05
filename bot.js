@@ -4,16 +4,17 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-client.on('message', message => {
-   
-	
-/*   client.on('guildMemberAdd', member => {
+
+
+client.on('guildMemberAdd', member => {
    if (member.role != "a")//if role du membre == pas de role
    {
 		member.send('Bienvenue sur le serveur de Heavy-Craft');
-		member.addRole("b")
+		member.addRole("b");
    }
-});*/
+});
+
+client.on('message', message => {
 	
 	switch (message.content)
 	{
