@@ -90,34 +90,35 @@ client.on('message', message =>
 		break;	
 		
 		case '!testMsg' :
-		message.channel.send('a'
+		message.channel.send('a'+
 
-		/*'Salutation '+ message.author.toString() +' 'et bienvenue sur le serveur discord officiel de Heavy-Craft!
+'Salutation '+ message.author.toString() +
+'et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
 
-Si tu es déjà membre :
-demmande à un membre du staff de te donner le role que tu possède en jeu.
-(fais la demmande directement en jeu si possible)
+'Si tu es déjà membre :\n' +
+'demmande à un membre du staff de te donner le role que tu possède en jeu.\n' +
+'(fais la demmande directement en jeu si possible)\n\n' +
 
-Pour nous rejoindre si tu est Naufragé (ici et en jeu) :
-Merci de prendre connaissance des règles du serveur! :)  
+'Pour nous rejoindre si tu est Naufragé (ici et en jeu) :\n' +
+'Merci de prendre connaissance des règles du serveur! :)\n\n' +
 //lien regles
 
-Les enregistrements sur le forum étant actuellement désactivés,
-les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.
-Tu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.
+'Les enregistrements sur le forum étant actuellement désactivés,\n' +
+'les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.\n' +
+'Tu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.\n\n' +
 
-Règles relatives au discord! :
-Pas d\'insultes, de spam et de pub sur les salons!
-Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.
-Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !
-Ne pas abuser des commandes "fun" de BotDesTavernes.
+'Règles relatives au discord! :\n' +
+'Pas d\'insultes, de spam et de pub sur les salons!\n' +
+'Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\n' +
+'Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !\n' +
+'Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
 
-Autres liens utiles!
-La dynmap, l\'adresse du serveur MC... :
-http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4
-Les commandes minecraft :
-http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9
-Les commandes des bots discords (indisponnible pour le moment):'*/
+'Autres liens utiles!\n' +
+'La dynmap, l\'adresse du serveur MC... :\n' +
+'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
+'Les commandes minecraft :' +
+'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
+'Les commandes des bots discords (indisponnible pour le moment):'
 );
 		break;
 	}   
