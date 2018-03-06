@@ -13,7 +13,7 @@ client.on('guildMemberAdd', member => {
 		member.send('Bienvenue sur le serveur de Heavy-Craft');
 		var roleN = member.guild.roles.find('name','b');
 		//member.addRole(role)
-		member.send(roleN.toString());
+		member.send(roleN);
    //}
 });
 
