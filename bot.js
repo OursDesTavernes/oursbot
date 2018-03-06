@@ -83,6 +83,11 @@ client.on('message', message =>
 		case '!hems' :
 		message.channel.send('http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=2&thread_id=2530');
 		break;	
+			
+		//test message
+		case '!test' :
+		message.channel.send('test' + \n + 'test');
+		break;	
 	}   
 });     
 // THIS  MUST  BE  THIS  WAY
