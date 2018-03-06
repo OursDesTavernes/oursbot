@@ -86,7 +86,7 @@ client.on('message', message =>
 
 		//test message carriage return  \n
 		case '!test' :
-		message.channel.send('test\n\ntest '+member.toString());
+		message.channel.send('test\n\ntest '+ member.toString());
 		break;	
 		
 		case '!testMsg' :
