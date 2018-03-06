@@ -90,35 +90,36 @@ client.on('message', message =>
 		break;	
 		
 		case '!testMsg' :
-		message.channel.send('a'+
+		message.channel.send(
 
 'Salutation '+ message.author.toString() +
-'et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
+' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
 
-'Si tu es déjà membre :\n' +
-'demmande à un membre du staff de te donner le role que tu possède en jeu.\n' +
-'(fais la demmande directement en jeu si possible)\n\n' +
+':arrow_right: Si tu es déjà membre :\n' +
+'demande à un membre du staff de te donner le role que tu possède en jeu.\n' +
+'(fais la demande directement en jeu si possible)\n\n' +
 
-'Pour nous rejoindre si tu est Naufragé (ici et en jeu) :\n' +
-'Merci de prendre connaissance des règles du serveur! :)\n\n' +
-//lien regles
+':arrow_right: Pour nous rejoindre si tu est Naufragé (ici et en jeu) :\n' +
+'Merci de prendre connaissance des règles du serveur! :)\n' +
+'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=2'+'\n\n'+
 
 'Les enregistrements sur le forum étant actuellement désactivés,\n' +
 'les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.\n' +
 'Tu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.\n\n' +
 
-'Règles relatives au discord! :\n' +
-'Pas d\'insultes, de spam et de pub sur les salons!\n' +
-'Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\n' +
-'Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !\n' +
-'Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
+':exclamation:Règles relatives au discord! ::exclamation:\n' +
+':no_entry_sign:Pas d\'insultes, de spam et de pub sur les salons!\n' +
+':exclamation:Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\n' +
+':exclamation:Merci d\'utiliser un langage correct et d\'éviter le langage SMS! SURTOUT POUR LES PRESENTATIONS!\n' +
+':no_entry_sign:Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !\n' +
+':no_entry_sign:Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
 
 'Autres liens utiles!\n' +
 'La dynmap, l\'adresse du serveur MC... :\n' +
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
-'Les commandes minecraft :' +
+'Les commandes minecraft :\n' +
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
-'Les commandes des bots discords (indisponnible pour le moment):'
+'Les commandes des bots discords (indisponible pour le moment):'
 );
 		break;
 	}   
@@ -127,7 +128,6 @@ client.on('message', message =>
 client.login(process.env.BOT_TOKEN);
 
 
-//'Salutation '+ member.toString() +' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\nSi tu es déjà membre :\ndemmande à un membre du staff de te donner le role que tu possède en jeu.\n(fais la demmande directement en jeu si possible)\n\nPour nous rejoindre si tu est Naufragé (ici et en jeu) :\nMerci de prendre connaissance des règles du serveur! :)\nhttp://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=2\n\nLes enregistrements sur le forum étant actuellement désactivés,\nles présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.\nTu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.\n\nRègles relatives au discord! :\nPas d\'insultes, de spam et de pub sur les salons!\nMerci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\nNe pas utiliser les commandes du bot de musique ailleur que dans #musique !\nNe pas abuser des commandes "fun" de BotDesTavernes.\n\nAutres liens utiles!\nLa dynmap, l\'adresse du serveur MC... :\nhttp://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4\nLes commandes minecraft :\nhttp://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9\nLes commandes des bots discords (indisponnible pour le moment):'
 
 
 
