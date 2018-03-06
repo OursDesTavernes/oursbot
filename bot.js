@@ -10,7 +10,39 @@ client.on('ready', () =>
 client.on('guildMemberAdd', member => 
 {
 	//message de bienvenue
-	member.send('Bienvenue sur le serveur de Heavy-Craft');
+	member.send(
+'Salutation '+ member.toString() +
+' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
+
+':arrow_right: Si tu es déjà membre :\n' +
+'demande à un membre du staff de te donner le role que tu possède en jeu.\n' +
+'(fais la demande directement en jeu si possible)\n\n' +
+
+':arrow_right: Pour nous rejoindre si tu est Naufragé (ici et en jeu) :\n' +
+'Merci de prendre connaissance des règles du serveur! :)\n' +
+'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=2'+'\n\n'+
+
+'Les enregistrements sur le forum étant actuellement désactivés,\n' +
+'les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.\n' +
+'Tu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.\n\n' +
+
+':exclamation:Règles relatives au discord! ::exclamation:\n' +
+':no_entry_sign:Pas d\'insultes, de spam et de pub sur les salons!\n' +
+':exclamation:Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\n' +
+':exclamation:Merci d\'utiliser un langage correct et d\'éviter le langage SMS! SURTOUT POUR LES PRESENTATIONS!\n' +
+':no_entry_sign:Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !\n' +
+':no_entry_sign:Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
+
+':arrow_right:Autres liens utiles!\n' +
+'La dynmap, l\'adresse du serveur MC... :\n' +
+'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
+'Les commandes minecraft :\n' +
+'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
+'Les commandes des bots discords (indisponible pour le moment):'
+	
+	
+	
+	);
 	//donne le role de Naufragé a un membre quand il rejoint le serveur
 	var roleN = member.guild.roles.find('name','Naufragé');
 	member.addRole(roleN)	
@@ -114,7 +146,7 @@ client.on('message', message =>
 ':no_entry_sign:Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !\n' +
 ':no_entry_sign:Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
 
-'Autres liens utiles!\n' +
+':arrow_right:Autres liens utiles!\n' +
 'La dynmap, l\'adresse du serveur MC... :\n' +
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
 'Les commandes minecraft :\n' +
