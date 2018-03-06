@@ -11,7 +11,7 @@ client.on('guildMemberAdd', member => {
    //if (member.role != "a")//if role du membre == pas de role
    //{
 		member.send('Bienvenue sur le serveur de Heavy-Craft');
-		var roleN = member.guild.roles.find('name','b');
+		var roleN = member.guild.roles.find('name','Naufragé');
 		member.addRole(roleN)
 		
    //}
