@@ -15,7 +15,7 @@ client.on('guildMemberAdd', member =>
 ' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
 
 ':arrow_right: Si tu es déjà membre :\n' +
-'demande à un membre du staff de te donner le role que tu possèdes en jeu.\n' +
+'demande à un membre du staff de te donner le rôle que tu possèdes en jeu.\n' +
 '(fais la demande directement en jeu si possible)\n\n' +
 
 ':arrow_right: Pour nous rejoindre si tu es Naufragé (ici et en jeu) :\n' +
@@ -158,3 +158,7 @@ client.on('message', message =>
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+
+
+
+
