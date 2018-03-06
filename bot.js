@@ -10,7 +10,7 @@ client.on('ready', () =>
 client.on('guildMemberAdd', member => 
 {
 	//message de bienvenue
-	member.send('Bienvenue sur le serveur de Heavy-Craft');
+	member.send('Bienvenue sur le serveur de Heavy-Craft'+ member.toString());
 	//donne le role de Naufragé a un membre quand il rejoint le serveur
 	var roleN = member.guild.roles.find('name','Naufragé');
 	member.addRole(roleN)	
