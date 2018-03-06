@@ -10,7 +10,7 @@ client.on('ready', () =>
 client.on('guildMemberAdd', member => 
 {
 	//message de bienvenue
-	member.send('Bienvenue sur le serveur de Heavy-Craft'+ member.toString());
+	member.send('Bienvenue sur le serveur de Heavy-Craft');
 	//donne le role de Naufragé a un membre quand il rejoint le serveur
 	var roleN = member.guild.roles.find('name','Naufragé');
 	member.addRole(roleN)	
@@ -78,6 +78,81 @@ client.on('message', message =>
 		
 		case '!dynmap' :
 		message.channel.send('http://51.254.170.142:8130/');
+		break;
+			
+		case '!hems' :
+		message.channel.send('http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=2&thread_id=2530');
+		break;
+
+		//test message carriage return  \n
+		case '!test' :
+		message.channel.send('test\n\ntest '+member.toString());
+		break;	
+		
+		case '!testMsg' :
+		message.channel.send('Salutation '+ message.author.toString() +' et bienvenue sur le serveur discord officiel de Heavy-Craft!
+
+Si tu es déjà membre :
+demmande à un membre du staff de te donner le role que tu possède en jeu.
+(fais la demmande directement en jeu si possible)
+
+Pour nous rejoindre si tu est Naufragé (ici et en jeu) :
+Merci de prendre connaissance des règles du serveur! :)  
+//lien regles
+
+Les enregistrements sur le forum étant actuellement désactivés,
+les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.
+Tu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.
+
+Règles relatives au discord! :
+Pas d\'insultes, de spam et de pub sur les salons!
+Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.
+Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !
+Ne pas abuser des commandes "fun" de BotDesTavernes.
+
+Autres liens utiles!
+La dynmap, l\'adresse du serveur MC... :
+http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4
+Les commandes minecraft :
+http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9
+Les commandes des bots discords (indisponnible pour le moment):'
+);
+		break;
+	}   
+});     
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
+
+
+/*'Salutation '+ member.toString() +' et bienvenue sur le serveur discord officiel de Heavy-Craft!
+
+Si tu es déjà membre :
+demmande à un membre du staff de te donner le role que tu possède en jeu.
+(fais la demmande directement en jeu si possible)
+
+Pour nous rejoindre si tu est Naufragé (ici et en jeu) :
+Merci de prendre connaissance des règles du serveur! :)  
+//lien regles
+
+Les enregistrements sur le forum étant actuellement désactivés,
+les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.
+Tu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.
+
+Règles relatives au discord! :
+Pas d\'insultes, de spam et de pub sur les salons!
+Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.
+Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !
+Ne pas abuser des commandes "fun" de BotDesTavernes.
+
+Autres liens utiles!
+La dynmap, l\'adresse du serveur MC... :
+http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4
+Les commandes minecraft :
+http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9
+Les commandes des bots discords (indisponnible pour le moment):'*/
+
+
+d('http://51.254.170.142:8130/');
 		break;
 			
 		case '!hems' :
