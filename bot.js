@@ -86,7 +86,7 @@ client.on('message', message =>
 			
 		//test message
 		case '!test' :
-		message.channel.send('test\ntest');
+		message.channel.send('test\n\ntest c\'est');
 		break;	
 	}   
 });     
