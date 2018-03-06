@@ -1,22 +1,23 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
+client.on('ready', () => 
+{
+	console.log('I am ready!');
 });
 
-
-
-client.on('guildMemberAdd', member => {
-
-		member.send('Bienvenue sur le serveur de Heavy-Craft');
-		var roleN = member.guild.roles.find('name','Naufragé');
-		member.addRole(roleN)
-		
+//quand un nouveau membre rejoint le serveur...
+client.on('guildMemberAdd', member => 
+{
+	//message de bienvenue
+	member.send('Bienvenue sur le serveur de Heavy-Craft');
+	//donne le role de Naufragé a un membre quand il rejoint le serveur
+	var roleN = member.guild.roles.find('name','Naufragé');
+	member.addRole(roleN)	
 });
 
-client.on('message', message => {
-	
+client.on('message', message => 
+{	
 	switch (message.content)
 	{
 		case '!soif' :
