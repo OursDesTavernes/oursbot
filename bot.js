@@ -49,7 +49,21 @@ client.on('guildMemberAdd', member =>
 });
 
 client.on('message', message => 
-{	
+{
+	if(message.substring(0,4)=='!mdp')	
+	{
+		if(message.substring(4)==' HeavyCraftQualities')
+		{
+			message.delete;
+			message.channel.send(message.author.toString() + ' :white_check_mark: Mot de passe accepté');		
+		}
+		else
+		{
+			message.delete;
+			message.channel.send(message.author.toString() + ' :x: Mot de passe refusé');
+		}	
+	}
+		
 	switch (message.content)
 	{
 		case '!soif' :
@@ -151,13 +165,15 @@ client.on('message', message =>
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
 'Les commandes minecraft :\n' +
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
-'Les commandes des bots discords (lien indisponible pour le moment):'
+'Les commandes des bots discords (indisponible pour le moment):'
 );
 		break;
 	}   
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+
+
 
 
 
