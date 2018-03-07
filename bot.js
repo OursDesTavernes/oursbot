@@ -47,7 +47,7 @@ client.on('guildMemberAdd', member =>
 	var roleN = member.guild.roles.find('name','Naufragé');
 	member.addRole(roleN)	
 });
-
+/*
 client.on('message', message => 
 {
 	if(message.substring(0,4)=='!mdp')	
@@ -63,7 +63,7 @@ client.on('message', message =>
 			message.channel.send(message.author.toString() + ' :x: Mot de passe refusé');
 		}	
 	}
-		
+*/		
 	switch (message.content)
 	{
 		case '!soif' :
