@@ -47,9 +47,10 @@ client.on('guildMemberAdd', member =>
 	var roleN = member.guild.roles.find('name','Naufragé');
 	member.addRole(roleN)	
 });
-/*
+
 client.on('message', message => 
 {
+/*	
 	if(message.substring(0,4)=='!mdp')	
 	{
 		if(message.substring(4)==' HeavyCraftQualities')
