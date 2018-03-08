@@ -82,7 +82,7 @@ client.on('message', message =>
 		if(cmdMdp.toString() == '!msg')
 		{
 			let allowedRole = message.guild.roles.find("name", "Admin");
-			if (message.member.roles.has(allowedRole.id)
+			if (message.author.roles.has(allowedRole.id)
 			{
 				// allowed access to command
 				message.delete()
