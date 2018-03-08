@@ -69,7 +69,6 @@ client.on('message', message =>
 	switch (message.content)
 	{
 		case '!soif' :
-		message.delete()
 		message.channel.send('tiens, voici une bonne bière! :beer:');
 		break;
 
@@ -94,7 +93,8 @@ client.on('message', message =>
 		break;
 		
 		case '!chips' :
-		message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes :corn: :Kappapride:');
+		message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes :corn:');
+		message.delete(10000)
 		break;
 		
 		case '!talos' :
