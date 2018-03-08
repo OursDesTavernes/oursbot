@@ -50,7 +50,7 @@ client.on('guildMemberAdd', member =>
 
 client.on('message', message => 
 {
-	var cmdMdp = message.substring(0,4);
+	var cmdMdp = message.content.substring(0,4);
 	/*
 	if(message.substring(0,4)=='!mdp')	
 	{
