@@ -51,10 +51,11 @@ client.on('guildMemberAdd', member =>
 client.on('message', message => 
 {
 	var cmdMdp = message.content.substring(0,4);
-	/*
-	if(message.substring(0,4)=='!mdp')	
+	var mdp = message.content.substring(4)
+	
+	if(cmdMdp.toString() =='!mdp')	
 	{
-		if(message.substring(4)==' HeavyCraftQualities')
+		if(mdp.toString() ==' HeavyCraftQualities')
 		{
 			message.delete()
 			message.channel.send(message.author.toString() + ' :white_check_mark: Mot de passe accepté');		
@@ -65,7 +66,9 @@ client.on('message', message =>
 			message.channel.send(message.author.toString() + ' :x: Mot de passe refusé');
 		}	
 	}
-	*/
+	else
+	{
+	
 		
 	switch (message.content)
 	{
@@ -172,7 +175,8 @@ client.on('message', message =>
 'Les commandes des bots discords (indisponible pour le moment):'
 );
 		break;
-	}   
+	}  
+	}	
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
