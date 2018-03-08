@@ -78,13 +78,29 @@ client.on('message', message =>
 	}
 	else
 	{
-		/*
+		
 		if(cmdMdp.toString() == '!msg')
 		{
-			message.delete()
-			message.channel.send(mdp.toString());
+			let allowedRole = message.guild.roles.find("name", "Admin");
+			if (message.member.roles.has(allowedRole.id)
+			{
+				// allowed access to command
+				message.delete()
+				message.channel.send(mdp.toString());
+			}
+			else 
+			{
+				// not allowed access
+				message.delete()
+				message.channel.send(':x: Tu n\'as pas accès à cette commande');
+			}
+			
+			
+			
+			
+			
 		}
-		*/
+		
 	
 		
 	switch (message.content)
@@ -168,8 +184,8 @@ client.on('message', message =>
 		break;	
 		
 		case '!testMsg' :
-		
-		/*var roleN = member.guild.roles.find('name','@everyone');
+/*		
+		var roleN = member.guild.roles.find('name','@everyone');
 		roleN.send(
 		
 		
@@ -202,7 +218,8 @@ client.on('message', message =>
 'Les commandes minecraft :\n' +
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
 'Les commandes des bots discords (indisponible pour le moment):'
-);*/
+);
+*/
 		break;
 	}  
 	}	
