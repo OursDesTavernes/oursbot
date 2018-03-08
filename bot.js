@@ -78,7 +78,7 @@ client.on('message', message =>
 	}
 	else
 	{
-		
+		/*
 		if(cmdMdp.toString() == '!msg')
 		{
 			let allowedRole = message.guild.roles.find("name", "Admin");
@@ -100,6 +100,7 @@ client.on('message', message =>
 			
 			
 		}
+		*/
 		
 		
 	
