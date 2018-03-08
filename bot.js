@@ -66,6 +66,14 @@ client.on('message', message =>
 		{
 			message.delete()
 			message.channel.send(message.author.toString() + ' :x: Mot de passe refusé');
+			var delMessage = (message.author.toString() + ' :x: Mot de passe refusé');
+			client.on('message', message => 
+			{
+				if(message.content == delMessage.toString ())
+				{
+					message.delete (2000)
+				}
+			});
 		}	
 	}
 	else
