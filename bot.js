@@ -68,6 +68,11 @@ client.on('message', message =>
 	}
 	else
 	{
+		if(cmdMdp.toString() == '!msg')
+		{
+			message.delete()
+			message.channel.send(mdp.toString());
+		}
 	
 		
 	switch (message.content)
