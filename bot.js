@@ -135,8 +135,8 @@ client.on('message', message =>
 
 		//test message carriage return  \n
 		case '!test' :
-		message.channel.send(cmdMdp.toString() + 'test\n\ntest '+ message.author.toString());
-		message.delete(5000)
+		message.channel.send(cmdMdp.toString());
+		//message.delete(5000)
 		break;	
 		
 		case '!testMsg' :
