@@ -168,9 +168,13 @@ client.on('message', message =>
 		break;	
 		
 		case '!testMsg' :
-		message.channel.send(
+		
+		var roleN = member.guild.roles.find('name','@everyone');
+		roleN.send(
+		
+		
 
-'Salutation '+ message.author.toString() +
+'Salutation ' +
 ' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
 
 ':arrow_right: Si tu es déjà membre :\n' +
