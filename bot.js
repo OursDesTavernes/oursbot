@@ -54,12 +54,12 @@ client.on('message', message =>
 	{
 		if(message.substring(4)==' HeavyCraftQualities')
 		{
-			message.delete();
+			message.delete()
 			message.channel.send(message.author.toString() + ' :white_check_mark: Mot de passe accepté');		
 		}
 		else
 		{
-			message.delete();
+			message.delete()
 			message.channel.send(message.author.toString() + ' :x: Mot de passe refusé');
 		}	
 	}
