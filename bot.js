@@ -38,6 +38,8 @@ client.on('guildMemberAdd', member =>
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
 'Les commandes minecraft :\n' +
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
+'Le groupe Steam :\n' +
+'http://steamcommunity.com/groups/Heavy-Craft_Reloaded'+'\n' +
 'Les commandes des bots discords (lien indisponible pour le moment):'
 	
 	
@@ -68,11 +70,13 @@ client.on('message', message =>
 	}
 	else
 	{
+		/*
 		if(cmdMdp.toString() == '!msg')
 		{
 			message.delete()
 			message.channel.send(mdp.toString());
 		}
+		*/
 	
 		
 	switch (message.content)
@@ -143,7 +147,8 @@ client.on('message', message =>
 
 		//test message carriage return  \n
 		case '!test' :
-		//message.channel.send(cmdMdp.toString()).delete(2000);
+		message.channel.send(cmdMdp.toString());
+		client.message.delete(2000)
 		//message.delete(5000)
 		break;	
 		
