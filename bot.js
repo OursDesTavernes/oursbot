@@ -50,21 +50,20 @@ client.on('guildMemberAdd', member =>
 
 client.on('message', message => 
 {
-/*	
 	if(message.substring(0,4)=='!mdp')	
 	{
 		if(message.substring(4)==' HeavyCraftQualities')
 		{
-			message.delete;
+			message.delete();
 			message.channel.send(message.author.toString() + ' :white_check_mark: Mot de passe accepté');		
 		}
 		else
 		{
-			message.delete;
+			message.delete();
 			message.channel.send(message.author.toString() + ' :x: Mot de passe refusé');
 		}	
 	}
-*/		
+		
 	switch (message.content)
 	{
 		case '!soif' :
@@ -173,12 +172,6 @@ client.on('message', message =>
 });     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
-
-
-
-
-
-
 
 
 
