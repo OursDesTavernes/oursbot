@@ -50,6 +50,7 @@ client.on('guildMemberAdd', member =>
 
 client.on('message', message => 
 {
+	/*
 	if(message.substring(0,4)=='!mdp')	
 	{
 		if(message.substring(4)==' HeavyCraftQualities')
@@ -63,6 +64,7 @@ client.on('message', message =>
 			message.channel.send(message.author.toString() + ' :x: Mot de passe refusé');
 		}	
 	}
+	*/
 		
 	switch (message.content)
 	{
