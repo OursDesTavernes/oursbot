@@ -169,7 +169,7 @@ client.on('message', message =>
 		
 		case '!testMsg' :
 		
-		var roleN = member.guild.roles.find('name','@everyone');
+		/*var roleN = member.guild.roles.find('name','@everyone');
 		roleN.send(
 		
 		
@@ -202,7 +202,7 @@ client.on('message', message =>
 'Les commandes minecraft :\n' +
 'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
 'Les commandes des bots discords (indisponible pour le moment):'
-);
+);*/
 		break;
 	}  
 	}	
