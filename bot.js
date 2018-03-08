@@ -50,6 +50,7 @@ client.on('guildMemberAdd', member =>
 
 client.on('message', message => 
 {
+	var cmdMdp = message.substring(0,4);
 	/*
 	if(message.substring(0,4)=='!mdp')	
 	{
@@ -94,7 +95,6 @@ client.on('message', message =>
 		
 		case '!chips' :
 		message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes :corn:');
-		message.delete(10000)
 		break;
 		
 		case '!talos' :
@@ -135,7 +135,8 @@ client.on('message', message =>
 
 		//test message carriage return  \n
 		case '!test' :
-		message.channel.send('test\n\ntest '+ message.author.toString());
+		message.channel.send(cmdMdp.toString() + 'test\n\ntest '+ message.author.toString());
+		message.delete(5000)
 		break;	
 		
 		case '!testMsg' :
