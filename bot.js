@@ -69,6 +69,7 @@ client.on('message', message =>
 	switch (message.content)
 	{
 		case '!soif' :
+		message.delete()
 		message.channel.send('tiens, voici une bonne bière! :beer:');
 		break;
 
