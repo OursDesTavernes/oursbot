@@ -94,13 +94,13 @@ client.on('message', message =>
 			// not allowed access
 			message.delete()
 			message.channel.send(':x: Tu n\'as pas accès à cette commande');				
-			client.on('message', message => 
+			/*client.on('message', message => 
 			{
 				if(message.content == ':x: Tu n\'as pas accès à cette commande')
 				{
 					message.delete (2000)
 				}
-			});
+			});*/
 		}
 	}	
 	else
