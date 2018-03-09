@@ -11,39 +11,36 @@ client.on('guildMemberAdd', member =>
 {
 	//message de bienvenue
 	member.send(
-'Salutation '+ member.toString() +
-' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
+	'Salutation '+ member.toString() +
+	' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
 
-':arrow_right: Si tu es déjà membre :\n' +
-'demande à un membre du staff de te donner le rôle que tu possèdes en jeu.\n' +
-'(fais la demande directement en jeu si possible)\n\n' +
+	':arrow_right: Si tu es déjà membre :\n' +
+	'demande à un membre du staff de te donner le rôle que tu possèdes en jeu.\n' +
+	'(fais la demande directement en jeu si possible)\n\n' +
 
-':arrow_right: Pour nous rejoindre si tu es Naufragé (ici et en jeu) :\n' +
-'Merci de prendre connaissance des règles du serveur! :)\n' +
-'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=2'+'\n\n'+
+	':arrow_right: Pour nous rejoindre si tu es Naufragé (ici et en jeu) :\n' +
+	'Merci de prendre connaissance des règles du serveur! :)\n' +
+	'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=2'+'\n\n'+
 
-'Les enregistrements sur le forum étant actuellement désactivés,\n' +
-'les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.\n' +
-'Tu as également accès au "général-naufragé" et au salon vocal "l\'épave" pour toutes questions.\n\n' +
+	'Les enregistrements sur le forum étant actuellement désactivés,\n' +
+	'les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.\n' +
+	'Tu as également accès au "général-naufragé" et au salon vocal "l\'épave" pour toutes questions.\n\n' +
 
-':exclamation:Règles relatives au discord! ::exclamation:\n' +
-':no_entry_sign:Pas d\'insultes, de spam et de pub sur les salons!\n' +
-':exclamation:Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\n' +
-':exclamation:Merci d\'utiliser un langage correct et d\'éviter le langage SMS! SURTOUT POUR LES PRESENTATIONS!\n' +
-':no_entry_sign:Ne pas utiliser les commandes du bot de musique ailleurs que dans #musique !\n' +
-':no_entry_sign:Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
+	':exclamation:Règles relatives au discord! ::exclamation:\n' +
+	':no_entry_sign:Pas d\'insultes, de spam et de pub sur les salons!\n' +
+	':exclamation:Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\n' +
+	':exclamation:Merci d\'utiliser un langage correct et d\'éviter le langage SMS! SURTOUT POUR LES PRESENTATIONS!\n' +
+	':no_entry_sign:Ne pas utiliser les commandes du bot de musique ailleurs que dans #musique !\n' +
+	':no_entry_sign:Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
 
-':arrow_right:Autres liens utiles!\n' +
-'La dynmap, l\'adresse du serveur MC... :\n' +
-'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
-'Les commandes minecraft :\n' +
-'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
-'Le groupe Steam :\n' +
-'http://steamcommunity.com/groups/Heavy-Craft_Reloaded'+'\n' +
-'Les commandes des bots discords (lien indisponible pour le moment):'
-	
-	
-	
+	':arrow_right:Autres liens utiles!\n' +
+	'La dynmap, l\'adresse du serveur MC... :\n' +
+	'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
+	'Les commandes minecraft :\n' +
+	'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
+	'Le groupe Steam :\n' +
+	'http://steamcommunity.com/groups/Heavy-Craft_Reloaded'+'\n' +
+	'Les commandes des bots discords (lien indisponible pour le moment):'
 	);
 	//donne le role de Naufragé a un membre quand il rejoint le serveur
 	var roleN = member.guild.roles.find('name','Naufragé');
@@ -76,154 +73,155 @@ client.on('message', message =>
 			});
 		}	
 	}
+	else if(cmdMdp.toString() == '!msg')
+	{
+		let allowedRoleAdmin = message.guild.roles.find("name", "Admin");
+		let allowedRoleModo = message.guild.roles.find("name", "Modo");
+		if (message.member.roles.has(allowedRoleAdmin.id))
+		{
+			// allowed access to command
+			message.delete()
+			message.channel.send(mdp.toString());
+		}
+		else if (message.member.roles.has(allowedRoleModo.id))
+		{
+			message.delete()
+			message.channel.send(mdp.toString());
+				
+		}	
+		else
+		{
+			// not allowed access
+			message.delete()
+			message.channel.send(':x: Tu n\'as pas accès à cette commande');				
+			client.on('message', message => 
+			{
+				if(message.content == ':x: Tu n\'as pas accès à cette commande')
+				{
+					message.delete (2000)
+				}
+			});
+		}
+	}	
 	else
 	{
-		
-		if(cmdMdp.toString() == '!msg')
+		switch (message.content)
 		{
-			let allowedRole = message.guild.roles.find("name", "Admin");
-			if (message.member.roles.has(allowedRole.id))
+			case '!soif' :
+			message.channel.send('tiens, voici une bonne bière! :beer:');
+			break;
+
+			case '!café' :
+			message.channel.send('tiens, voici un bon café! :coffee:');
+			break;
+			
+			case '!super soif de la mort qui tue! TAVERNIER!' :
+			message.channel.send('TIENS,VOICI UNE PUTAIN DE TONNE DE LITRES DE BIERE!!!:beers::beers::beers::beers::beers::beers:');
+			break;
+			
+			case '!afkafé' :
+			message.channel.send(message.author.toString() + ' est parti se faire un café :coffee:');
+			break;
+			
+			case '!elfes' :
+			message.channel.send('les elfes sont une anomalie');
+			break;
+			
+			case '!thé' :
+			message.channel.send('ON NE SERT PAS LES NEFLES ICI!');
+			break;
+			
+			case '!chips' :
+			message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes :corn:');
+			break;
+			
+			case '!talos' :
+			message.channel.send('http://i.imgur.com/c0QTX24.jpg');
+			break;
+			
+			case '!dwarf' :
+			message.channel.send('nains > elfes');
+			break;
+				
+			case '!empire' :
+			message.channel.send('GLOIRE AUX SOMBRAGES!');
+			break;
+				
+			case '!sombrage' :
+			message.channel.send('MORT AUX IMPERIAUX!');
+			break;
+				
+			case '!pin-up' :
+			message.channel.send('https://image.noelshack.com/fichiers/2018/09/7/1520187043-pin-up.png');
+			break;
+				
+			case '!items uniques' :
+			message.channel.send('FAITES PAS CHIER ILS SONT SUR LA MAP!');
+			break;
+				
+			case '!ronde' :
+			message.channel.send('Chevels est partie faire sa ronde');
+			break;
+			
+			case '!dynmap' :
+			message.channel.send('http://51.254.170.142:8130/');
+			break;
+				
+			case '!hems' :
+			message.channel.send('http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=2&thread_id=2530');
+			break;
+
+			//test message carriage return  \n
+			case '!test' :
+			message.channel.send(cmdMdp.toString());
+			client.on('message', message => 
 			{
-				// allowed access to command
-				message.delete()
-				message.channel.send(mdp.toString());
-			}
-			else 
-			{
-				// not allowed access
-				message.delete()
-				message.channel.send(':x: Tu n\'as pas accès à cette commande');
-			}
-			
-			
-			
-			
-			
-		}
+				if(message.content == cmdMdp.toString ())
+				{
+					message.delete (2000)
+				}
+			});
+			//client.message.delete(2000)
+			//message.delete(5000)
+			break;	
 		
-		
-		
-	
-		
-	switch (message.content)
-	{
-		case '!soif' :
-		message.channel.send('tiens, voici une bonne bière! :beer:');
-		break;
+			case '!testMsg' :
+			/*		
+			var roleN = member.guild.roles.find('name','@everyone');
+			roleN.send(
+			
+			'Salutation ' +
+			' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
 
-		case '!café' :
-		message.channel.send('tiens, voici un bon café! :coffee:');
-		break;
-		
-		case '!super soif de la mort qui tue! TAVERNIER!' :
-		message.channel.send('TIENS,VOICI UNE PUTAIN DE TONNE DE LITRES DE BIERE!!!:beers::beers::beers::beers::beers::beers:');
-		break;
-		
-		case '!afkafé' :
-		message.channel.send(message.author.toString() + ' est parti se faire un café :coffee:');
-		break;
-		
-		case '!elfes' :
-		message.channel.send('les elfes sont une anomalie');
-		break;
-		
-		case '!thé' :
-		message.channel.send('ON NE SERT PAS LES NEFLES ICI!');
-		break;
-		
-		case '!chips' :
-		message.channel.send('enfonce toi un maïs dans le c*l et va jouer dans le micro-ondes :corn:');
-		break;
-		
-		case '!talos' :
-		message.channel.send('http://i.imgur.com/c0QTX24.jpg');
-		break;
-		
-		case '!dwarf' :
-		message.channel.send('nains > elfes');
-		break;
-			
-		case '!empire' :
-		message.channel.send('GLOIRE AUX SOMBRAGES!');
-		break;
-			
-		case '!sombrage' :
-		message.channel.send('MORT AUX IMPERIAUX!');
-		break;
-			
-		case '!pin-up' :
-		message.channel.send('https://image.noelshack.com/fichiers/2018/09/7/1520187043-pin-up.png');
-		break;
-			
-		case '!items uniques' :
-		message.channel.send('FAITES PAS CHIER ILS SONT SUR LA MAP!');
-		break;
-			
-		case '!ronde' :
-		message.channel.send('Chevels est partie faire sa ronde');
-		break;
-		
-		case '!dynmap' :
-		message.channel.send('http://51.254.170.142:8130/');
-		break;
-			
-		case '!hems' :
-		message.channel.send('http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=2&thread_id=2530');
-		break;
+			':arrow_right: Si tu es déjà membre :\n' +
+			'demande à un membre du staff de te donner le rôle que tu possèdes en jeu.\n' +
+			'(fais la demande directement en jeu si possible)\n\n' +
 
-		//test message carriage return  \n
-		case '!test' :
-		message.channel.send(cmdMdp.toString());
-		client.on('message', message => 
-		{
-			if(message.content == cmdMdp.toString ())
-			{
-				message.delete (2000)
-			}
-		});
-		//client.message.delete(2000)
-		//message.delete(5000)
-		break;	
-		
-		case '!testMsg' :
-/*		
-		var roleN = member.guild.roles.find('name','@everyone');
-		roleN.send(
-		
-		
+			':arrow_right: Pour nous rejoindre si tu es Naufragé (ici et en jeu) :\n' +
+			'Merci de prendre connaissance des règles du serveur! :)\n' +
+			'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=2'+'\n\n'+
 
-'Salutation ' +
-' et bienvenue sur le serveur discord officiel de Heavy-Craft!\n\n' +
+			'Les enregistrements sur le forum étant actuellement désactivés,\n' +
+			'les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.\n' +
+			'Tu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.\n\n' +
 
-':arrow_right: Si tu es déjà membre :\n' +
-'demande à un membre du staff de te donner le rôle que tu possèdes en jeu.\n' +
-'(fais la demande directement en jeu si possible)\n\n' +
+			':exclamation:Règles relatives au discord! ::exclamation:\n' +
+			':no_entry_sign:Pas d\'insultes, de spam et de pub sur les salons!\n' +
+			':exclamation:Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\n' +
+			':exclamation:Merci d\'utiliser un langage correct et d\'éviter le langage SMS! SURTOUT POUR LES PRESENTATIONS!\n' +
+			':no_entry_sign:Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !\n' +
+			':no_entry_sign:Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
 
-':arrow_right: Pour nous rejoindre si tu es Naufragé (ici et en jeu) :\n' +
-'Merci de prendre connaissance des règles du serveur! :)\n' +
-'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=2'+'\n\n'+
-
-'Les enregistrements sur le forum étant actuellement désactivés,\n' +
-'les présentations se font sur le salon textuel "Présentations" dans les salons Naufragés.\n' +
-'Tu as également accès au "général-naufragé" et au salon vocal l\'épave pour toutes questions.\n\n' +
-
-':exclamation:Règles relatives au discord! ::exclamation:\n' +
-':no_entry_sign:Pas d\'insultes, de spam et de pub sur les salons!\n' +
-':exclamation:Merci d\'utiliser un pseudo ou nick ressemblant à votre pseudo minecraft.\n' +
-':exclamation:Merci d\'utiliser un langage correct et d\'éviter le langage SMS! SURTOUT POUR LES PRESENTATIONS!\n' +
-':no_entry_sign:Ne pas utiliser les commandes du bot de musique ailleur que dans #musique !\n' +
-':no_entry_sign:Ne pas abuser des commandes "fun" de BotDesTavernes.\n\n' +
-
-':arrow_right:Autres liens utiles!\n' +
-'La dynmap, l\'adresse du serveur MC... :\n' +
-'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
-'Les commandes minecraft :\n' +
-'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
-'Les commandes des bots discords (indisponible pour le moment):'
-);
-*/
-		break;
-	}  
+			':arrow_right:Autres liens utiles!\n' +
+			'La dynmap, l\'adresse du serveur MC... :\n' +
+			'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=3&thread_id=4'+'\n'+
+			'Les commandes minecraft :\n' +
+			'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
+			'Les commandes des bots discords (indisponible pour le moment):'
+			);
+			*/
+			break;
+		}  
 	}	
 });     
 // THIS  MUST  BE  THIS  WAY
