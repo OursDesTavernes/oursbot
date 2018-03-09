@@ -83,24 +83,24 @@ client.on('message', message =>
 			message.delete()
 			message.channel.send(mdp.toString());
 		}
-		else if (message.member.roles.has(allowedRoleModo.id))
+		/*else if (message.member.roles.has(allowedRoleModo.id))
 		{
 			message.delete()
 			message.channel.send(mdp.toString());
 				
-		}	
+		}*/	
 		else
 		{
 			// not allowed access
 			message.delete()
 			message.channel.send(':x: Tu n\'as pas accès à cette commande');				
-			/*client.on('message', message => 
+			client.on('message', message => 
 			{
 				if(message.content == ':x: Tu n\'as pas accès à cette commande')
 				{
 					message.delete (2000)
 				}
-			});*/
+			});
 		}
 	}	
 	else
