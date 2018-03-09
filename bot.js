@@ -77,7 +77,7 @@ client.on('message', message =>
 	{
 		let allowedRoleAdmin = message.guild.roles.find("name", "Admin");
 		let allowedRoleModo = message.guild.roles.find("name", "Modo");
-		if (message.member.roles.has(allowedRoleAdmin.id))
+		if (message.member.roles.has(allowedRoleAdmin.id) || message.member.roles.has(allowedRoleModo.id))
 		{
 			// allowed access to command
 			message.delete()
@@ -88,7 +88,7 @@ client.on('message', message =>
 			message.delete()
 			message.channel.send(mdp.toString());
 				
-		}*/	
+		}	*/
 		else
 		{
 			// not allowed access
