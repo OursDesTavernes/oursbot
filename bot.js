@@ -125,6 +125,7 @@ client.on('message', message =>
 			
 			case '!elfes' :
 			message.channel.send('les elfes sont une anomalie');
+			message.channel.send('https://image.noelshack.com/fichiers/2018/20/4/1526582654-d.png');
 			break;
 			
 			case '!thé' :
