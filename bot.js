@@ -152,9 +152,9 @@ client.on('message', message =>
 			message.channel.send('MORT AUX IMPERIAUX!');
 			break;
 				
-			/*case '!pin-up' :
+			case '!pin-up' :
 			message.channel.send('https://image.noelshack.com/fichiers/2018/09/7/1520187043-pin-up.png');
-			break;*/
+			break;
 				
 			case '!items uniques' :
 			message.channel.send('FAITES PAS CHIER ILS SONT SUR LA MAP!');
