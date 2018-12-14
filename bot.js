@@ -171,6 +171,10 @@ client.on('message', message =>
 			case '!hems' :
 			message.channel.send('http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=2&thread_id=2530');
 			break;
+				
+			case '!toto' :
+			message.channel.send('https://cdn.discordapp.com/attachments/420761230169473025/465583608304893976/Capture.PNG');
+			break;	
 
 			//test message carriage return  \n
 			case '!test' :
