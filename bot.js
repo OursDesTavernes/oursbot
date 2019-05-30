@@ -191,6 +191,7 @@ client.on('message', message =>
 			break;	
 		
 			case '!testMsg' :
+				message.channel.send('test ok?');
 			/*		
 			var roleN = member.guild.roles.find('name','@everyone');
 			roleN.send(
