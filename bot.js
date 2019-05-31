@@ -6,6 +6,7 @@ client.on('ready', () =>
 	console.log('I am ready!');
 });
 /*
+
 //quand un nouveau membre rejoint le serveur...
 client.on('guildMemberAdd', member => 
 {
@@ -45,7 +46,7 @@ client.on('guildMemberAdd', member =>
 	//donne le role de Naufragé a un membre quand il rejoint le serveur
 	var roleN = member.guild.roles.find('name','Naufragé');
 	member.addRole(roleN)	
-});*/
+});
 
 client.on('message', message => 
 {
@@ -89,6 +90,7 @@ client.on('message', message =>
 			message.channel.send(mdp.toString());
 				
 		}	*/
+/*
 		else
 		{
 			// not allowed access
@@ -225,11 +227,12 @@ client.on('message', message =>
 			'http://sur-les-ruines-de-heavy-craft.craft.vg/index.php?file=Forum&page=viewtopic&forum_id=18&thread_id=9'+'\n' +
 			'Les commandes des bots discords (indisponible pour le moment):'
 			);
-			*/
+			*//*
 			break;
 		}  
 	}	
-});     
+});  
+*/
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
 
