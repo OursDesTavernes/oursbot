@@ -5,7 +5,7 @@ client.on('ready', () =>
 {
 	console.log('I am ready!');
 });
-
+/*
 //quand un nouveau membre rejoint le serveur...
 client.on('guildMemberAdd', member => 
 {
@@ -45,7 +45,7 @@ client.on('guildMemberAdd', member =>
 	//donne le role de Naufragé a un membre quand il rejoint le serveur
 	var roleN = member.guild.roles.find('name','Naufragé');
 	member.addRole(roleN)	
-});
+});*/
 
 client.on('message', message => 
 {
